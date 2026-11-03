@@ -1,0 +1,4 @@
+patient_id,cancer_type,age_years,stage,sex,vital_status
+TCGA-ZZ-0001,BRCA,50,Stage IIA,female,alive
+TCGA-ZZ-0002,OV,60,III,female,dead
+TCGA-ZZ-0004,BRCA,70,IV,male,alive

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcga-fusion-explorer"
+version = "0.6.0"
+description = "Memory-bounded fusion analysis and patient-level clinical integration"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.50,<2", "lifelines>=0.30,<0.31"]
+
+[project.scripts]
+fusion-explorer = "fusion_explorer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fusion_explorer*"]
+
